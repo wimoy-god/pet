@@ -31,7 +31,23 @@
         <h1 class="hero-title">Вместе делаем мир лучше!</h1>
     <div class="hero-actions">
         <button class="hero-ineed">Мне нужна помощь</button>
-        <button class="hero-help">Я хочу помочь</button>
+  
+        <button id="openRegister" class="hero-help">
+            Я хочу помочь
+        </button>
+        <div class="register-modal" id="registerModal">
+            <form class="register-form">
+                <span class="close-btn" id="closeRegister">&times;</span>
+                <span class="f">Ваше имя</span>
+                <input type="text" class="text" placeholder="Имя">
+                <span class="f">Контакные данные</span>
+                <input type="email" class="email" placeholder="Email">
+                <input type="tel" class="tel" placeholder="Телефон">
+                
+        
+                <button type="submit" class="send">Отправить заявку</button>
+            </form>
+        </div>
     </div>
     </div>
     </main>
@@ -147,17 +163,17 @@
         </div>
         <div class="finance-card">
             <div class="finance-card-image">
-                <img class="finance-image" src="assets/cross.png" alt="finance-image">
-                <h2 class="year">История</h2>
+                <img class="finance-image" src="assets/don.png" alt="finance-image">
+                <h2 class="year">История</h2>   
                 <h2 class="don">Скачать PDF</h2>
             </div>
             <div class="finance-card-image">
-            <img class="finance-image" src="assets/cross.png" alt="finance-image">
+            <img class="finance-image" src="assets/don.png" alt="finance-image">
             <h2 class="year">История</h2>
             <h2 class="don">Скачать PDF</h2>
         </div>
             <div class="finance-card-image">
-            <img class="finance-image" src="assets/cross.png" alt="finance-image">
+            <img class="finance-image" src="assets/don.png" alt="finance-image">
             <h2 class="year">История</h2>
             <h2 class="don">Скачать PDF</h2>
         </div>
@@ -210,5 +226,6 @@
             </div>
          </section>
         
+    <script src="script.js"></script>
 </body>
 </html>
