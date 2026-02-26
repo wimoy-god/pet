@@ -83,6 +83,295 @@ body {
     align-items: center;
 }
 
+.donate-form {
+    background-color: #f9f9f9;
+    border-radius: 24px;
+    width: 640px;
+    max-width: 90%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.donate-form-header {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.donate-close {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.donate-form-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.donate-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.donate-label {
+    font-weight: 600;
+}
+
+.donate-select {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    font-family: var(--global-font);
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.donate-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.donate-amount {
+    flex: 0 0 auto;
+    min-width: 80px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.donate-other {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    font-family: var(--global-font);
+    font-size: 14px;
+}
+
+.donate-form input[type="text"],
+.donate-form input[type="email"],
+.donate-form input[type="tel"] {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    font-family: var(--global-font);
+    font-size: 14px;
+}
+
+.donate-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.donate-cancel {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.donate-submit {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.help-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.help-form {
+    background-color: #f9f9f9;
+    border-radius: 24px;
+    width: 640px;
+    max-width: 90%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.help-form-header {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.help-close {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.help-form-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.help-form-group-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.help-form input,
+.help-form textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    font-family: var(--global-font);
+    font-size: 14px;
+    resize: none;
+    margin: 3px;
+}
+
+.help-form textarea {
+    min-height: 100px;
+}
+
+.help-actions {
+    display: flex;
+    justify-content: left;
+    margin-top: 8px;
+    gap:30px
+}
+
+.help-submit {
+    border-radius: 30px;
+    border: none;
+    padding: 10px 24px;
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.volunteer-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.volunteer-form {
+    background-color: #f9f9f9;
+    border-radius: 24px;
+    width: 700px;
+    max-width: 95%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.volunteer-header {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.volunteer-close {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.volunteer-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.volunteer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+}
+
+.vol-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.vol-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.volunteer-form input,
+.volunteer-form textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    font-family: var(--global-font);
+    font-size: 14px;
+    resize: none;
+}
+
+.volunteer-form textarea {
+    min-height: 120px;
+}
+
+.vol-checks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.vol-check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
 .text {
     border-radius: 30px;
     border: 2px solid #333;
@@ -157,7 +446,9 @@ body {
 }
 .hero-actions {
     display: flex;
-    gap: 30px;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
 }
 .hero-help{
     background-color: var(--orange);
@@ -253,8 +544,8 @@ body {
 
 .program-card-image {
     border-radius: 30px;
-    border: 1px solid #333;
     justify-content: center;
+    background-color: #F3F3F3;
     
 }
 .program-card-title {
@@ -311,7 +602,7 @@ body {
 
 .new-card-image {
     border-radius: 30px;
-    border: 1px solid #333;
+    background-color: #FFf;
 }
 .theme {
     border-radius: 30px;
@@ -373,7 +664,7 @@ body {
     background-color: #fff;
     padding: 15px 15px;
     text-align: center;
-    font-size: 34px;
+    font-size: 25px;
     color: #FF8400;
 }
 .new-button {
@@ -481,7 +772,7 @@ body {
     background-color: #fff;
     padding: 15px 15px;
     text-align: center;
-    font-size: 34px;
+    font-size: 25px;
     color: #FF8400;
 }
 .be-button {

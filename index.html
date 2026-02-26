@@ -30,22 +30,88 @@
     <div class="hero-content">
         <h1 class="hero-title">Вместе делаем мир лучше!</h1>
     <div class="hero-actions">
-        <button class="hero-ineed">Мне нужна помощь</button>
+        <button id="openHelp" class="hero-ineed">Мне нужна помощь</button>
   
         <button id="openRegister" class="hero-help">
             Я хочу помочь
         </button>
         <div class="register-modal" id="registerModal">
-            <form class="register-form">
-                <span class="close-btn" id="closeRegister">&times;</span>
-                <span class="f">Ваше имя</span>
-                <input type="text" class="text" placeholder="Имя">
-                <span class="f">Контакные данные</span>
-                <input type="email" class="email" placeholder="Email">
-                <input type="tel" class="tel" placeholder="Телефон">
-                
-        
-                <button type="submit" class="send">Отправить заявку</button>
+            <form class="donate-form">
+                <div class="donate-form-header">
+                    <span>Я хочу помочь</span>
+                    <span class="donate-close" id="closeRegister">&times;</span>
+                </div>
+                <div class="donate-form-body">
+                    <div class="donate-group">
+                        <div class="donate-label">Тип помощи</div>
+                        <select class="donate-select">
+                            <option>Денежное пожертвование</option>
+                            <option>Вещи и корм</option>
+                            <option>Волонтёрская помощь</option>
+                        </select>
+                    </div>
+
+                    <div class="donate-group">
+                        <div class="donate-label">Сумма пожертвования</div>
+                        <div class="donate-amounts">
+                            <button type="button" class="donate-amount">500</button>
+                            <button type="button" class="donate-amount">1000</button>
+                            <button type="button" class="donate-amount">2000</button>
+                            <button type="button" class="donate-amount">5000</button>
+                        </div>
+                        <input type="text" class="donate-other" placeholder="Другая сумма">
+                    </div>
+
+                    <div class="donate-group">
+                        <div class="donate-label">Ваше имя*</div>
+                        <input type="text" placeholder="Иван Иванов">
+                    </div>
+
+                    <div class="donate-group">
+                        <div class="donate-label">Контактные данные</div>
+                        <input type="email" placeholder="example@mgkeit.ru">
+                        <input type="tel" placeholder="+7 (999) 123-45-67">
+                    </div>
+
+                    <div class="donate-actions">
+                        <button type="submit" class="donate-submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="help-modal" id="helpModal">
+            <form class="help-form">
+                <div class="help-form-header">
+                    <span>Заявка на помощь</span>
+                    <span class="help-close" id="closeHelp">&times;</span>
+                </div>
+                <div class="help-form-body">
+                    <div class="help-form-group">
+                        <div class="help-form-group-title">Ваше имя*</div>
+                        <input type="text" placeholder="Иван Иванов">
+                    </div>
+                    <div class="help-form-group">
+                        <div class="help-form-group-title">Контактные данные</div>
+                        <input type="email" placeholder="example@mgkeit.ru">
+                        <input type="tel" placeholder="+7 (999) 123-45-67">
+                    </div>
+                    <div class="help-form-group">
+                        <div class="help-form-group-title">Адрес</div>
+                        <input type="text" placeholder="Москва, ул. Примерная, д. 1">
+                    </div>
+                    <div class="help-form-group">
+                        <div class="help-form-group-title">Тип животного</div>
+                        <input type="text" placeholder="Кошка">
+                    </div>
+                    <div class="help-form-group">
+                        <div class="help-form-group-title">Описание ситуации</div>
+                        <textarea placeholder="Подробно опишите ситуацию..."></textarea>
+                    </div>
+                    <div class="help-actions">
+                        <button type="submit" class="help-submit">Отправить</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -59,8 +125,7 @@
             <img src="assets/about.png" alt="about-image">
         </div>
         <div class="about-text-container">
-        <div class="about-text">
-            <p>Благотворительный фонд "Кошечка" помогает бездомным и брошенным животным обрести дом, любовь и заботу</p></div>
+
         <div class="about-text-2">
             <p>Наша миссия</p></div>
             <div class="about-text-3">
@@ -198,7 +263,73 @@
         </div>
         </div>
         <div class="be-button">
-            <button class="be">Заполнить анкету</button>   
+            <button id="openVolunteer" class="be">Заполнить анкету</button>   
+        </div>  
+
+        <div class="volunteer-modal" id="volunteerModal">
+            <form class="volunteer-form">
+                <div class="volunteer-header">
+                    <span>Анкета волонтера</span>
+                    <span class="volunteer-close" id="closeVolunteer">&times;</span>
+                </div>
+                <div class="volunteer-body">
+                    <div class="volunteer-grid">
+                        <div class="vol-field">
+                            <div class="vol-label">Имя*</div>
+                            <input type="text" placeholder="Иван">
+                        </div>
+                        <div class="vol-field">
+                            <div class="vol-label">Фамилия*</div>
+                            <input type="text" placeholder="Иванов">
+                        </div>
+                        <div class="vol-field">
+                            <div class="vol-label">Телефон*</div>
+                            <input type="tel" placeholder="+7 (999) 123-45-67">
+                        </div>
+                        <div class="vol-field">
+                            <div class="vol-label">Email*</div>
+                            <input type="email" placeholder="example@mgkeit.ru">
+                        </div>
+                        <div class="vol-field">
+                            <div class="vol-label">Возраст*</div>
+                            <input type="text" placeholder="25">
+                        </div>
+                        <div class="vol-field">
+                            <div class="vol-label">Город*</div>
+                            <input type="text" placeholder="Москва">
+                        </div>
+                    </div>
+
+                    <div class="vol-field">
+                        <div class="vol-label">Опыт работы с животными*</div>
+                        <input type="text" placeholder="Нет опыта">
+                    </div>
+
+                    <div class="vol-field">
+                        <div class="vol-label">Когда вы будете помогать?</div>
+                        <div class="vol-checks">
+                            <label class="vol-check"><input type="checkbox"> Будние дни</label>
+                            <label class="vol-check"><input type="checkbox"> Выходные</label>
+                            <label class="vol-check"><input type="checkbox"> Утро</label>
+                            <label class="vol-check"><input type="checkbox"> Вечер</label>
+                        </div>
+                    </div>
+
+                    <div class="vol-field">
+                        <div class="vol-label">У вас есть автомобиль?*</div>
+                        <input type="text" placeholder="Нет">
+                    </div>
+
+                    <div class="vol-field">
+                        <div class="vol-label">Почему вы хотите стать волонтером?*</div>
+                        <textarea placeholder="Опишите подробно вашу позицию..."></textarea>
+                    </div>
+
+                    <div class="donate-actions">
+                        <button type="submit" class="donate-submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
         </div>  
          </section>
          <section id="footer" class="footer">
