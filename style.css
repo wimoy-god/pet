@@ -30,13 +30,11 @@ body {
 }
 .container {
     width: 100%;
-    max-width: auto;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 0 var(--global-horizontal) var(--global-vertical);
     align-items: center;
     display: flex;
-    justify-content: center;
-    gap: 400px;
+    justify-content: space-between;
 }
 .menu-logo {
     display: flex;
@@ -437,23 +435,23 @@ body {
     align-items: center;
     gap: 30px;
 }
-.hero-content h1 {
-    font-size: 100px;
-    font-weight: 700;
-    color: #333;
-    max-width: 1000px;
-    margin-bottom: 100px;
-}
+    .hero-content h1 {
+        font-size: 6em;
+        font-weight: 600;
+        color: #333;
+        max-width: 1000px;
+        margin-bottom: 100px;
+    }
 .hero-actions {
     display: flex;
     width: 100%;
-    gap: 50px;
-    align-items: center;
+    gap: 30px;
+   justify-content: space-between;
 }
 .hero-help{
     background-color: var(--orange);
     border-radius: 30px;
-    padding: 10px 100px;
+    padding: 15px 100px;
     border: none;
     font-size: 30px;
     font-weight: 500;
@@ -462,7 +460,7 @@ body {
 .hero-ineed{
     background-color: #fff;
     border-radius: 30px;
-    padding: 10px 50px;
+    padding: 15px 80px;
     border: 1px solid ;
     font-size: 30px;
     font-weight: 500;
@@ -479,7 +477,6 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
-    margin: 100px 0;
 }
 
 .about-content {
@@ -495,6 +492,12 @@ body {
 
 .about-image {
     flex: 0 0 900px; 
+}
+
+.about {
+    background-color: #F3F3F3;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .about-image img {
